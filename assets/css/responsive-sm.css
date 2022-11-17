@@ -1,0 +1,91 @@
+@media (max-width: 768px) {
+  body.menu-active {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .header {
+    padding: 0px 3rem;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header>nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--gray-light);
+
+    z-index: 1000;
+
+    translate: 100%;
+
+    transition-duration: 500ms;
+  }
+
+  .header>nav[data-visible="true"] {
+    translate: 0%;
+  }
+
+  .header>.login-links-container {
+    display: none;
+  }
+
+  .header>.mobile-menu {
+    display: block;
+    z-index: 9999;
+  }
+
+  .header>.mobile-menu>.hamburguer-menu {
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+  }
+
+  .header>.mobile-menu>.hamburguer-menu>img {
+    width: 32px;
+  }
+
+  main {
+    margin-top: 5rem;
+    flex-direction: column;
+  }
+
+  main .container {
+    width: 100%;
+
+    padding: 0px 2rem;
+  }
+
+  main .container .login-container .login-form {
+    width: 100%;
+  }
+
+  main .container .login-container .login-form .buttons-container {
+    gap: 5rem;
+  }
+
+  main .container .login-container .login-form .buttons-container .register-button,
+  .login-button {
+    width: 50%;
+  }
+
+  main .image-container {
+    margin-top: 5rem;
+    width: 100%;
+
+    padding: 0px 2rem;
+  }
+
+  main .image-container img {
+    width: 100%;
+  }
+}
